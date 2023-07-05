@@ -30,3 +30,15 @@
     width:38px;
     padding-top:8px;
 }
+
+.login_btn{
+    position:fixed;
+    right:40px;
+    top:25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color:white;
+    background-color: #e50914;
+    border:none;
+    cursor: pointer;
+}

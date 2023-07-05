@@ -12,7 +12,7 @@ import requests from './Requests'
 function HomeScreen() {
   return (
     <div className="homeScreen">
-        <Nav/>
+        <Nav user="yes"/>
         <Banner/>
         <Row title="Netflix Original" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true}/>
         <Row title="Trending Now" fetchUrl={requests.fetchTrending}/>
