@@ -5,10 +5,13 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
+
 
 function SignupScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
+  const navigate = useNavigate();
 
   const register = (e) => {
     e.preventDefault();
@@ -34,10 +37,12 @@ function SignupScreen() {
     )
       .then((authUser) => {
         console.log(authUser);
+        navigate("/");
       })
       .catch((error) => {
         alert(error.message);
       });
+    
   };
 
   return (

@@ -24,11 +24,13 @@ function Nav({ user = null, login = null }) {
       <div className="nav_contents">
         <a href="/"><img src={logo} alt="logo" className="nav_logo" /></a>
         {user ? (
+          <a href="/profile">
           <img
             src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-vnl1thqrh02x7ra2.jpg"
             alt="avatar"
             className="nav_avatar"
           />
+          </a>
         ) : (
           ""
         )}

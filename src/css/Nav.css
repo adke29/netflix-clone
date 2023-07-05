@@ -25,6 +25,7 @@
     object-fit: contain;
 }
 .nav_avatar{
+    cursor: pointer;
     position:fixed;
     right:45px;
     width:38px;
