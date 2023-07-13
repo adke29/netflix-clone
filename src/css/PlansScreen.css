@@ -10,9 +10,17 @@
 }
 
 .planScreen_plan button{
-    cursor: pointer;
     padding:10px;
-    background-color:#e50914;
     color:white;
     border: none;
+}
+
+.planbtn_active{
+    cursor: pointer;
+    background-color:#e50914;
+}
+
+.planbtn_disabled {
+    cursor:default;
+    background-color: grey;
 }
