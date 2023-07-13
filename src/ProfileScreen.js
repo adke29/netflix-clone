@@ -6,6 +6,7 @@ import { selectUser } from "./features/userSlice";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
+import PlansScreen from "./PlansScreen";
 
 function ProfileScreen() {
   const user = useSelector(selectUser);
@@ -18,12 +19,17 @@ function ProfileScreen() {
         <div className="profileScreen_info">
           <img
             src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-vnl1thqrh02x7ra2.jpg"
-            alt="profile-picture"
+            alt="profile"
           />
           <div className="profileScreen_details">
             <h2>{user.email}</h2>
             <div className="profileScreen_plans">
               <h3>Plans</h3>
+              <PlansScreen/>
+
+
+
+
               <button
                 className="profileScreen_signOut"
                 onClick={() => {
