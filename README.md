@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+# Please make an .env file first
+format:
+//for google firebase config
+REACT_APP_apiKey= (somekey)
+REACT_APP_authDomain= (somekey)
+REACT_APP_projectId= (somekey)
+REACT_APP_storageBucket= (somekey)
+REACT_APP_messagingSenderId=(somekey)
+REACT_APP_appId= (somekey)
+
+//for imdb api key
+REACT_APP_AXIOS_apiKey =(somekey)
+
 ## Available Scripts
 
 In the project directory, you can run:

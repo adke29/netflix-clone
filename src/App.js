@@ -13,8 +13,7 @@ import ProfileScreen from "./ProfileScreen";
 
 function App() {
   var user = useSelector(selectUser);
-  const dispatch = useDispatch();
-
+  const dispatch = useDispatch(); 
   useEffect( () => {
     const unsubscribe = onAuthStateChanged(auth, (userAuth) => {
       if (userAuth) {
